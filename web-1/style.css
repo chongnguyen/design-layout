@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* resabue component */
+
+.row {
+    width: 850px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.title-section, .describe-title {
+    text-align: center;
+}
+
+.title-section {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.describe-title {
+    color: #aaa;
+    font-size: .9rem;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+/* -------------------------------------------------------- */
+/* HEADING */
+.header-picture {
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 100px;
+}
+.header-picture img {
+   width: 100%;
+}
+
+.header-picture .intro-herder {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 15px #000, -2px 2px 15px #000;
+}
+
+.intro-herder p {
+    font-size: 2rem;
+}
+
+.header .navbar {
+    display: flex;
+    background-color: #222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar .icon-search {
+    color: #fff;
+    padding: 14px 16px;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    background-color: #000;
+}
+
+/* ------------------------------------------- */
+/* about */
+.picture {
+    display: flex;
+    margin-top: 20px;
+}
+
+.picture .picture-item {
+    padding: 30px;
+    text-align: center;
+}
+
+.picture-item img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 5px #111;
+}
+
+.picture-item p {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------- */
+/*  PRODUCt */
+.product {
+    background-color: #000;
+    padding: 50px 0px;
+}
+
+.product .title-section {
+    color: #fff;
+}
+
+.product .date {
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+    color: #333;
+    padding: 10px;
+    margin: auto;
+}
+
+.product .date .fakebtn {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.fakebtn-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+}
+
+.product .product-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product .product-card .card {
+    width: 32%;
+    background-color: #fff;
+}
+
+.product-card .card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product .main-card {
+    padding: 15px;
+}
+
+.title-card {
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.date-card {
+    margin-bottom: 10px;
+    color: #777;
+}
+.describer-content-card {
+    margin-bottom: 25px;
+    font-size: .9rem;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ------------------------------------ */
+/* CONTACT */
+.contact {
+    padding-top: 100px;
+}
+
+.contact .main-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.main-contact .text-contact {
+    width: 40%;
+}
+
+.text-contact p {
+    margin-bottom: 12px;
+}
+
+.text-contact i {
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.main-contact .form-contact {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-contact .comment {
+    width: 100%;
+    display: block;
+}
+
+input {
+    width: 49%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact .btn {
+    padding: 10px 16px;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+/* --------------- box picture ----------------- */
+.box-picture img {
+    margin-top: 70px;
+    width: 100%;
+}
+
+
+/* ------------------------------------------------ */
+/* FOOTER  */
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #888;
+    padding-top: 45px;
+}
+
+footer .icon{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 992px){
+    .row {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 768px){
+    
+    .picture .picture-item {
+        padding: 5px;
+    }
+    
+    .picture-item img {
+        width: 100%;
+        box-shadow: 0px 0px 2px #999;
+    }
+    .main-contact .text-contact {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .main-contact .form-contact {
+        width: 100%;
+    }
+    .contact .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 576px){
+    .row {
+        margin-bottom: 0px;
+    }
+
+    .product {
+        padding: 0;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .product .product-card {
+        flex-wrap: wrap;
+    }
+    .product .product-card .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        padding-top: 30px;
+    }
+    .contact .main-contact{
+        margin-top: 0px;
+    }
+    .main-contact .text-contact {
+        width: 100%;
+    }
+    .main-contact .text-contact {
+        margin-bottom: 20px;
+    }
+}
