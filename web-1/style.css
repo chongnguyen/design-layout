@@ -10,7 +10,6 @@ html {
 }
 
 /* resabue component */
-
 .row {
     width: 850px;
     margin: auto;
@@ -48,9 +47,11 @@ html {
     left: 50%;
     bottom: 10%;
     transform: translate(-50%, -50%);
-    color: #fff;
     text-align: center;
     text-shadow: 2px 2px 15px #000, -2px 2px 15px #000;
+}
+.navbar .icon-search, .header-picture .intro-herder, .navbar a {
+    color: #fff;
 }
 
 .intro-herder p {
@@ -66,7 +67,6 @@ html {
 }
 
 .navbar .icon-search {
-    color: #fff;
     padding: 14px 16px;
     margin-left: auto;
     margin-right: 20px;
@@ -74,7 +74,6 @@ html {
 }
 
 .navbar a {
-    color: #fff;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -108,18 +107,21 @@ html {
 }
 
 /* ---------------------------- */
-/*  PRODUCt */
+/*  PRODUCT */
 .product {
     background-color: #000;
     padding: 50px 0px;
 }
 
-.product .title-section {
+.product .title-section, .fakebtn, .fakebtn-circle, .btn{
     color: #fff;
 }
 
-.product .date {
+.product .product-card .card, .product .date {
     background-color: #fff;
+}
+
+.product .date {
     border-bottom: 1px solid #aaa;
     color: #333;
     padding: 10px;
@@ -128,17 +130,15 @@ html {
 
 .product .date .fakebtn {
     background-color: red;
-    color: #fff;
     padding: 5px;
     margin-left: 10px;
 }
 
 .fakebtn-circle {
-    display: inline-block;
+    display: block;
     width: 25px;
     height: 25px;
     background-color: #000;
-    color: #fff;
     text-align: center;
     line-height: 25px;
     border-radius: 50%;
@@ -154,7 +154,6 @@ html {
 
 .product .product-card .card {
     width: 32%;
-    background-color: #fff;
 }
 
 .product-card .card img {
@@ -182,7 +181,6 @@ html {
 
 .btn {
     background-color: #000;
-    color: #fff;
     padding: 10px 14px;
     text-decoration: none;
     display: inline-block;
@@ -195,10 +193,13 @@ html {
 }
 
 .contact .main-contact{
+    margin-top: 100px;
+}
+
+.contact .main-contact, .main-contact .form-contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
 }
 
 .main-contact .text-contact {
@@ -216,9 +217,6 @@ html {
 
 .main-contact .form-contact {
     width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .main-contact .comment {
@@ -243,7 +241,6 @@ input {
     margin-top: 70px;
     width: 100%;
 }
-
 
 /* ------------------------------------------------ */
 /* FOOTER  */
