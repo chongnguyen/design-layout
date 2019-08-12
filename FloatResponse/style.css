@@ -157,3 +157,16 @@ footer {
     background-color: #666;
     text-align: center;
 }
+
+@media screen and (max-width: 400px) {
+    nav a, .nav-right, .content-dropdown {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section, aside {
+        width: 100%;
+    }
+}
