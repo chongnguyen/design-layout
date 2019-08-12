@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+.container {
+    background-color: #f5f5f5;
+    max-width: 95%;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header */
+header {
+    margin-top: 10px;
+    text-align: center;
+    padding: 50px;
+}
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #444;
+}
+
+nav a {
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #fff;
+    background-color: #444;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav .nav-right {
+    float: right;
+
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #111;
+}
+
+.dropdown {
+    position: relative;
+}
+
+nav .content-dropdown{
+    position: absolute;
+    min-width: 150px;
+    right: 0;
+    display: none;
+    background-color: #f5f5f5;
+    color: #111;
+}
+nav .content-dropdown a{
+    display: block;
+    background-color: #eee;
+    color: #111;
+}
+
+nav .content-dropdown a:hover,
+nav .content-dropdown a:active {
+    background-color: #444;
+    color: #fff;
+}
+
+nav .dropdown:hover .content-dropdown,
+nav .dropdown:active .content-dropdown{
+    display: block;
+}
+
+/* SECTION */
+section {
+    float: left;
+    width: 80%;
+}
+
+section article {
+    background-color: #fff;
+    margin: 20px 0px;
+    margin-right: 20px;
+    padding: 50px 30px;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article h2 + p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+article .picture img{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.picture + p {
+    margin-bottom: 20px;
+}
+
+/* ASIDE */
+aside {
+    float: left;
+    width: 20%;
+    margin: 20px 0px;
+}
+
+aside .about {
+    background-color: #fff;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+aside .box-aside {
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 20px
+}
+
+.box-aside .picture img{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+aside .title-box {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* FOOTER  */
+footer {
+    padding: 30px;
+    color:#fff;
+    background-color: #666;
+    text-align: center;
+}
