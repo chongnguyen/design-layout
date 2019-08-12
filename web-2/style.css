@@ -1,0 +1,189 @@
+/* DEFAULT SETUP */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    padding: 16px 18px;
+    text-align: center;
+    height: fit-content;
+}
+
+a:hover,
+a:active {
+    background-color: #aaa;
+}
+
+.title-section {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+section {
+    width: 95%;
+    margin: auto;
+    padding: 50px 0px;
+}
+/* -------------------------------------------------------------- */
+/* HEADER  */
+.header-picture {
+    position: relative;
+    padding-top: 45px;
+    margin-bottom: 50px;
+}
+.header-picture img {
+   width: 100%;
+}
+
+.header-picture .intro-herder {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px 2px 15px #000, -2px 2px 15px #000;
+}
+
+.header-picture .intro-herder span {
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 14px 20px;
+}
+.header-picture .intro-herder{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .navbar {
+    display: flex;
+    background-color: #fff;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #777;
+}
+
+.header .logo {
+    margin-right: auto;
+    font-family: Verdana, sans-serif;
+    letter-spacing: .3rem;
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+
+/* -------------------------------------------------------- */
+/* PROJECT */
+.box-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project .box-image .image-item {
+    display: inline-block;
+    width: 24%;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+.image-item img {
+    width: 100%;
+}
+
+.box-image p {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 14px;
+    top: 0;
+    left: 0;
+}
+
+/* ------------------------------------------------------------- */
+/* ABOUT */
+.title-section + p {
+    margin-bottom: 30px;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-card .card {
+    width: 24%;
+}
+
+.product-card .card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.title-card {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+.date-card {
+    margin-bottom: 20px;
+    color: #777;
+}
+.describer-content-card {
+    margin-bottom: 25px;
+    font-size: .9rem;
+}
+
+.btn {
+    display: block;
+    background-color: #ddd;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------- */
+/* CONTACT  */
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact .btn {
+    width: 150px;
+    background-color: #111;
+    color: #fff;
+}
+.contact .btn:hover,
+.contact .btn:active {
+    background-color: #777;
+}
+/* -------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------ */
+/* FOOTER  */
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #888;
+    padding-top: 45px;
+}
+
+footer .icon{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
