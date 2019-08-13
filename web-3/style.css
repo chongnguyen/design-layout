@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+/* ================================================================== */
+article {
+    margin-bottom: 70px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: #000;
+    text-decoration: none;
+    padding: 18px 22px;
+    background-color: #aaa;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #777;
+}
+
+.title-section {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-section + p {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section + p span {
+    color: #888;
+}
+
+.column-left img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.column-left .btn {
+    margin: 30px 0px;
+    display: block;
+    font-size: .7rem;
+    padding: 10px 14px;
+}
+
+.column-left .btn-like {
+    background-color: #fff;
+    border: 1px solid #000;
+    float: left;
+}
+.column-left .btn-rep {
+    background-color: #000;
+    border: 1px solid #000;
+    float: right;
+    color: #fff;
+}
+.column-left .btn-rep span {
+    background-color: #888;
+    padding: 5px 10px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.comment img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0;
+    margin-right: 30px;
+}
+.comment .info{
+    line-height: 2.5rem;
+    flex-grow: 1;
+}
+/* ================================================================== */
+
+/* HEADING */
+.header {
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+
+.header .navbar {
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar i:last-child {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar i {
+    padding: 14px 25px;
+    font-size: 1.5rem;
+}
+
+.navbar i:hover,
+.navbar i:active {
+    background-color: #999;
+}
+
+.intro .main-intro {
+    text-align: center;
+    padding: 60px;
+}
+
+
+.main-intro span {
+    background-color: #111;
+    color: #fff;
+    padding: 5px 9px;
+}
+
+.picture-intro {
+    position: relative;
+}
+
+.picture-intro img {
+    width: 100%;
+    display: block;
+}
+
+.picture-intro .title-picture {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    color: #fff;
+}
+.title-picture p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.title-picture h1 {
+    margin: 20px 0px 30px;
+    font-size: 3rem;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.container .column-left {
+    width: 70%;
+}
+
+.container .column-right {
+    width: 28%;
+}
+
+/* column right */
+
+.about, .advertise, .follow, .tags, .inspiration, .post , .subscribe{
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.about {
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.about img {
+    width: 100%;
+}
+.about h2, .about p{
+    margin: 10px;
+}
+
+.title-sidebar {
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.post .comment{
+    padding: 10px;
+}
+.post .comment img{
+    width: 70px;
+    height: 70px;
+}
+.advertise{margin-bottom: 30px;}
+.advertise div {
+    background-color: #aaa;
+    height: 200px;
+    border: 15px solid #fff;
+    text-align: center;
+    line-height: 180px;
+}
+
+.tags .title-sidebar ~ a {
+    margin: 5px;
+}
+
+.tags a {
+    text-decoration: none;
+    color: #000;
+    background-color: #999;
+    padding: 2px 10px;
+    display: inline-block;
+    margin:3px;
+}
+
+.tags p + a {
+    background-color: #000;
+    color: #fff;
+}
+
+.inspiration .ins-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inspiration img {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+}
+
+.follow i{
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.subscribe input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.subscribe {
+    padding: 20px;
+}
+
+.subscribe a {
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .btn {
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 15px 25px;
+    background-color: #000;
+    color: #fff;
+}
+
